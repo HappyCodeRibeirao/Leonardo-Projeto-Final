@@ -70,6 +70,61 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
+=======
+                <instance type="Herói" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <HP>4</HP>
+                        <coinCount>0</coinCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>350</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>110</x>
+                        <y>804</y>
+                        <z>0</z>
+                        <width>76</width>
+                        <height>98</height>
+                        <depth>0</depth>
+                        <hotspotX>0.571428597</hotspotX>
+                        <hotspotY>0.551724136</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                 <instance type="foguete" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -88,7 +143,10 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+<<<<<<< HEAD
                         <behavior-instance type="DestroyOutsideLayout" />
+=======
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -171,7 +229,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="coin" uid="22">
+=======
+                <instance type="Sprite" uid="21">
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -181,6 +243,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>638</x>
                         <y>687</y>
                         <z>0</z>
@@ -189,11 +252,25 @@
                         <depth>0</depth>
                         <hotspotX>0.502702713</hotspotX>
                         <hotspotY>0.501831532</hotspotY>
+=======
+                        <x>651</x>
+                        <y>-104</y>
+                        <z>0</z>
+                        <width>182</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Sprite2" uid="23">
+=======
+                <instance type="coin" uid="22">
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -203,6 +280,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>-314</x>
                         <y>256</y>
                         <z>0</z>
@@ -211,11 +289,25 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+=======
+                        <x>638</x>
+                        <y>687</y>
+                        <z>0</z>
+                        <width>59</width>
+                        <height>87</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502702713</hotspotX>
+                        <hotspotY>0.501831532</hotspotY>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Sprite4" uid="24">
+=======
+                <instance type="Sprite2" uid="23">
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -225,11 +317,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>479</x>
                         <y>170</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
+=======
+                        <x>-314</x>
+                        <y>256</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>40</height>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -245,8 +345,13 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
+<<<<<<< HEAD
                 <x>0</x>
                 <y>0</y>
+=======
+                <x>1</x>
+                <y>1</y>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -255,7 +360,100 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
+<<<<<<< HEAD
             <instances />
+=======
+            <instances>
+                <instance type="CoraçãoVazio" uid="15">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>275</x>
+                        <y>38</y>
+                        <z>0</z>
+                        <width>76</width>
+                        <height>58</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.482758611</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Coração" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>195</x>
+                        <y>38</y>
+                        <z>0</z>
+                        <width>76</width>
+                        <height>58</height>
+                        <depth>0</depth>
+                        <hotspotX>0.473684222</hotspotX>
+                        <hotspotY>0.482758611</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Coração" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>118</x>
+                        <y>38</y>
+                        <z>0</z>
+                        <width>76</width>
+                        <height>58</height>
+                        <depth>0</depth>
+                        <hotspotX>0.473684222</hotspotX>
+                        <hotspotY>0.482758611</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Coração" uid="18">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>41</x>
+                        <y>38</y>
+                        <z>0</z>
+                        <width>76</width>
+                        <height>58</height>
+                        <depth>0</depth>
+                        <hotspotX>0.473684222</hotspotX>
+                        <hotspotY>0.482758611</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
             <effects />
         </layer>
     </layers>

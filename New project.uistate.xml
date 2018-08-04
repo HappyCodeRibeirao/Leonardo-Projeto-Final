@@ -11,8 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Layout 1</layout>
+<<<<<<< HEAD
         <layout order="1">Layout 2</layout>
         <event-sheet active="1" order="2">Event sheet 1</event-sheet>
+=======
+        <layout active="1" order="1">Layout 2</layout>
+        <event-sheet order="2">Event sheet 1</event-sheet>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,11 +39,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Inimigo/" />
         <folder expanded="1" path="animation-folder/foguete/" />
+<<<<<<< HEAD
         <folder expanded="1" path="animation-folder/bgGelo/" />
         <folder expanded="1" path="animation-folder/transition/" />
         <folder expanded="1" path="animation-folder/coin/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/vida/" />
+=======
+        <folder expanded="1" path="animation-folder/Coração/" />
+        <folder expanded="1" path="animation-folder/CoraçãoVazio/" />
+        <folder expanded="1" path="animation-folder/bgGelo/" />
+        <folder expanded="1" path="animation-folder/transition/" />
+        <folder expanded="1" path="animation-folder/Inimigo2/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/coin/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
     </folders-expanded>
 </c2uistate>

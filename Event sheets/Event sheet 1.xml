@@ -3,7 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+<<<<<<< HEAD
         <variable constant="0" name="timePassed" sid="743268402502962" static="0" type="number">0</variable>
+=======
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
         <event-group description="" sid="653890754946510" title="heroi">
             <sub-events>
                 <event-block sid="159463243619294">
@@ -37,7 +40,11 @@
                 <event-block sid="168602087320055">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="177903339561468" type="Keyboard">
+<<<<<<< HEAD
                             <param id="0" name="Key">65 (A)</param>
+=======
+                            <param id="0" name="Key">65</param>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         </condition>
                     </conditions>
                     <actions>
@@ -74,6 +81,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
+<<<<<<< HEAD
                         <event-block sid="167723064841558">
                             <conditions>
                                 <condition id="-11" name="For Each" sid="399213552504214" type="System">
@@ -105,6 +113,8 @@
                                 </action>
                             </actions>
                         </event-block>
+=======
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         <event-block sid="455959679316677">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="924527528027653" type="System">
@@ -143,7 +153,11 @@
                                         <event-block sid="567355025463986">
                                             <conditions>
                                                 <condition id="2" inverted="1" name="Key is down" sid="819638428925079" type="Keyboard">
+<<<<<<< HEAD
                                                     <param id="0" name="Key">16 (Shift)</param>
+=======
+                                                    <param id="0" name="Key">16</param>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -187,14 +201,21 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+<<<<<<< HEAD
                 <event-block sid="584883355311003">
                     <conditions>
                         <condition id="2" name="Is playing" sid="324773144088629" type="Herói">
+=======
+                <event-block sid="537055777954595">
+                    <conditions>
+                        <condition id="2" inverted="1" name="Is playing" sid="132040530063166" type="Herói">
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                             <param id="0" name="Animation">&quot;Atacando&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
+<<<<<<< HEAD
                         <event-block sid="614646403965524">
                             <conditions>
                                 <condition id="-11" name="For Each" sid="485662847251150" type="System">
@@ -249,6 +270,23 @@
                                     </sub-events>
                                 </event-block>
                             </sub-events>
+=======
+                        <event-block any="1" sid="687602830498335">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="232497284926102" type="Herói">
+                                    <param id="0" name="Object">Inimigo</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="752160124938295" type="Herói">
+                                    <param id="0" name="Object">Inimigo2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="509115251316110" type="Herói">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -256,6 +294,7 @@
         </event-group>
         <event-group description="" sid="838757905853022" title="inimigo">
             <sub-events>
+<<<<<<< HEAD
                 <event-block sid="727045871387127">
                     <conditions>
                         <condition id="-11" name="For Each" sid="407681091368315" type="System">
@@ -289,6 +328,44 @@
                             </actions>
                         </event-block>
                     </sub-events>
+=======
+                <event-block sid="600663673521054">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="106471208828120" type="Herói">
+                            <param id="0" name="Object">Inimigo</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="725170505311940" type="Herói">
+                            <param id="0" name="Animation">&quot;Atacando&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="980988068421219" type="Inimigo" />
+                    </actions>
+                </event-block>
+                <event-block sid="914175239082835">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="893036538662396" type="System">
+                            <param id="0" name="First value">Inimigo.X</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">Herói.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="731952615299655" type="Inimigo">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="197303194498151">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="264855525795900" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="566004684382231" type="Inimigo">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                 </event-block>
                 <event-block sid="476120584769380">
                     <conditions>
@@ -322,8 +399,14 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="981035451869058" type="foguete" />
+<<<<<<< HEAD
                         <action id="5" name="Set frame" sid="796169620491606" type="vida">
                             <param id="0" name="Frame number">vida.AnimationFrame + 1 &gt;= 4 ? 4 : vida.AnimationFrame + 1</param>
+=======
+                        <action id="-12" name="Subtract from" sid="242351767579944" type="Herói">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Value">1</param>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         </action>
                     </actions>
                 </event-block>
@@ -333,11 +416,20 @@
                     </conditions>
                     <actions />
                     <sub-events>
+<<<<<<< HEAD
                         <event-block sid="199824313669491">
                             <conditions>
                                 <condition id="-1" name="Compare X" sid="315724893958687" type="foguete">
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="X co-ordinate">Herói.X</param>
+=======
+                        <event-block sid="756738064218606">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="955543952130638" type="System">
+                                    <param id="0" name="First value">Inimigo.X</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Herói.X</param>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                                 </condition>
                             </conditions>
                             <actions>
@@ -364,14 +456,24 @@
             <sub-events>
                 <event-block sid="130967496434761">
                     <conditions>
+<<<<<<< HEAD
                         <condition id="3" name="Compare frame" sid="644988065432668" type="vida">
                             <param id="0" name="Comparison">0</param>
                             <param id="1" name="Number">3</param>
+=======
+                        <condition id="-7" name="Compare instance variable" sid="127976896219492" type="Herói">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="691983457644015" type="Herói" />
+<<<<<<< HEAD
                         <action id="-26" name="Restart layout" sid="318705170033079" type="System" />
+=======
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                     </actions>
                 </event-block>
                 <event-block sid="809397095267988">
@@ -384,10 +486,13 @@
                         <action id="-2" name="Go to layout" sid="584521813288237" type="System">
                             <param id="0" name="Layout">Layout 2</param>
                         </action>
+<<<<<<< HEAD
                         <action id="-3" name="Set position" sid="640899155661383" type="Herói">
                             <param id="0" name="X">110</param>
                             <param id="1" name="Y">804</param>
                         </action>
+=======
+>>>>>>> f2f0cbb40f3536513e2f8035b4f0e713cbddf793
                     </actions>
                 </event-block>
             </sub-events>
