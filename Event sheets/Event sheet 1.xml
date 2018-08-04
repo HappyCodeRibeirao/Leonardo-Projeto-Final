@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="timePassed" sid="743268402502962" static="0" type="number">0</variable>
+        <event-group description="" sid="653890754946510" title="heroi">
+            <sub-events>
+                <event-block sid="159463243619294">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="995073939619723" type="System">
+                            <param id="0" name="First value">Herói.Platform.VectorX</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="614126031494089" type="Herói">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="923534730393584">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="817922484928542" type="System">
+                            <param id="0" name="First value">Herói.Platform.VectorX</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="772722536917757" type="Herói">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="168602087320055">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="177903339561468" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="800514182574544" type="Herói">
+                            <param id="0" name="Animation">&quot;Atacando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="536429802863473" type="Herói">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="456539724345587">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="638009371739919" type="Herói">
+                            <param id="0" name="Animation">&quot;Atacando&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="666156234574216" type="Herói">
+                            <param id="0" name="Animation">&quot;Parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="490072917213010" type="Herói">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="427356435584601">
+                    <conditions>
+                        <condition id="2" inverted="1" name="Is playing" sid="994853255687341" type="Herói">
+                            <param id="0" name="Animation">&quot;Atacando&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="167723064841558">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="399213552504214" type="System">
+                                    <param id="0" name="Object">Inimigo</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="158448903466858" type="System">
+                                    <param id="0" name="First value">abs(Herói.X - Inimigo.X)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">73</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="409098493427333" type="System">
+                                    <param id="0" name="First value">abs(Herói.Y - Inimigo.Y)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">75</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="719920943037616" type="System">
+                                    <param id="0" name="First value">time - timePassed</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="563955866285173" type="vida">
+                                    <param id="0" name="Frame number">vida.AnimationFrame + 1 &gt;= 4 ? 4 : vida.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="267743242244170" type="System">
+                                    <param id="0" name="Variable">timePassed</param>
+                                    <param id="1" name="Value">time</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="455959679316677">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="924527528027653" type="System">
+                                    <param id="0" name="First value">Herói.Platform.VectorY</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="757041573903280" type="Herói">
+                                    <param id="0" name="Animation">&quot;Pulando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="617493020601270">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="981105475635532" type="System">
+                                    <param id="0" name="First value">Herói.Platform.VectorY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="399978062166717">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="653855327125946" type="System">
+                                            <param id="0" name="First value">Herói.Platform.VectorX</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="567355025463986">
+                                            <conditions>
+                                                <condition id="2" inverted="1" name="Key is down" sid="819638428925079" type="Keyboard">
+                                                    <param id="0" name="Key">16 (Shift)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="768643918297498" type="Herói">
+                                                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action behavior="Platform" id="1" name="Set max speed" sid="382009956633531" type="Herói">
+                                                    <param id="0" name="Max Speed">350</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="356808928339818">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="538643166789781" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="548335841319836" type="Herói">
+                                                    <param id="0" name="Animation">&quot;Correndo&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action behavior="Platform" id="1" name="Set max speed" sid="946336583613188" type="Herói">
+                                                    <param id="0" name="Max Speed">700</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="851942811253201">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="879709820946301" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="551129711767832" type="Herói">
+                                            <param id="0" name="Animation">&quot;Parado&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="584883355311003">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="324773144088629" type="Herói">
+                            <param id="0" name="Animation">&quot;Atacando&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="614646403965524">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="485662847251150" type="System">
+                                    <param id="0" name="Object">Inimigo</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="677298187484533" type="System">
+                                    <param id="0" name="First value">abs(Herói.X - Inimigo.X)</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">115</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="549422057700994" type="System">
+                                    <param id="0" name="First value">abs(Herói.Y - Inimigo.Y)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">75</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="880219975453776">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="990461295501823" type="Herói">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Number">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="371979100661322">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="312513260827186" type="Herói">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="X co-ordinate">Inimigo.X</param>
+                                                </condition>
+                                                <condition id="7" name="Is mirrored" sid="632075564421559" type="Herói" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="980988068421219" type="Inimigo" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="225455524749813">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="249362965066484" type="Herói">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="X co-ordinate">Inimigo.X</param>
+                                                </condition>
+                                                <condition id="7" inverted="1" name="Is mirrored" sid="272316527778484" type="Herói" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="283383369516420" type="Inimigo" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="838757905853022" title="inimigo">
+            <sub-events>
+                <event-block sid="727045871387127">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="407681091368315" type="System">
+                            <param id="0" name="Object">Inimigo</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="914175239082835">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="893036538662396" type="System">
+                                    <param id="0" name="First value">Inimigo.X</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Herói.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="731952615299655" type="Inimigo">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="197303194498151">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="264855525795900" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="566004684382231" type="Inimigo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="476120584769380">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="866939289883114" type="Inimigo">
+                            <param id="0" name="Object">Herói</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="190079698102481">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="817607180335195" type="System">
+                                    <param id="0" name="Interval (seconds)">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="610284939238209" type="Inimigo">
+                                    <param id="0" name="Object">foguete</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="612076625076673">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="990506527030514" type="foguete">
+                            <param id="0" name="Object">Herói</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="981035451869058" type="foguete" />
+                        <action id="5" name="Set frame" sid="796169620491606" type="vida">
+                            <param id="0" name="Frame number">vida.AnimationFrame + 1 &gt;= 4 ? 4 : vida.AnimationFrame + 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="736969193224703">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="545521959217984" type="foguete" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="199824313669491">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="315724893958687" type="foguete">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">Herói.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="249493255406076" type="foguete">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="939281137661949">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="475998936106653" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="175371950050650" type="foguete">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="533681310003214" title="general">
+            <sub-events>
+                <event-block sid="130967496434761">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="644988065432668" type="vida">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="691983457644015" type="Herói" />
+                        <action id="-26" name="Restart layout" sid="318705170033079" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="809397095267988">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="157283312350223" type="Herói">
+                            <param id="0" name="Object">transition</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="584521813288237" type="System">
+                            <param id="0" name="Layout">Layout 2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="640899155661383" type="Herói">
+                            <param id="0" name="X">110</param>
+                            <param id="1" name="Y">804</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="843450104012648" title="items" />
+        <event-block sid="745364805101025">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="815159750251676" type="Herói">
+                    <param id="0" name="Object">coin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="293731290843429" type="coin" />
+                <action id="-11" name="Add to" sid="655903631853395" type="Herói">
+                    <param id="0" name="Instance variable">coinCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="334586288889334" title="caixa de texto">
+            <sub-events>
+                <event-block sid="384938975177804">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="910622731940150" type="Text" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="559253761096432" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="886850405954148" type="Text" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
