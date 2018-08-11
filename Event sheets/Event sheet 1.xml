@@ -414,13 +414,60 @@
                         <condition id="-18" name="On created" sid="910622731940150" type="Text" />
                     </conditions>
                     <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="400844548149534" type="Herói">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="384485402184507" type="Inimigo">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
                         <action id="-16" name="Wait" sid="559253761096432" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="886850405954148" type="Text" />
+                        <action behavior="Platform" id="11" name="Set enabled" sid="718613416567660" type="Herói">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="184456180042648" type="Inimigo">
+                            <param id="0" name="Animation">&quot;Atirando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="191355556922662">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="557376151311201" type="Herói">
+                    <param id="0" name="Object">triggerCaixa2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" disabled="1" id="11" name="Set enabled" sid="818654607511332" type="Herói">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="2" name="Stop" sid="875843895569991" type="Herói" />
+                <action id="-15" name="Set visible" sid="448145632002995" type="Text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="855712711904338" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="653721290599237" type="Herói">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="531619419949076" type="Text2" />
+            </actions>
+        </event-block>
+        <event-block sid="556996668185615">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="751861960070124" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="344240871138563" type="Inimigo">
+                    <param id="0" name="Animation">&quot;Piscando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

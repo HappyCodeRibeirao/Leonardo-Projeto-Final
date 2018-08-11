@@ -115,7 +115,7 @@
                                 <max-speed>350</max-speed>
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
+                                <jump-strength>700</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
@@ -283,7 +283,7 @@
                 </instance>
                 <instance type="Text" uid="8">
                     <properties>
-                        <text>Olá!</text>
+                        <text>Olá! Seja bem-vindo ao jogo. Esta é a primeira fase. Use as setas para se movimentar, SHIFT para correr e ↑ para pular.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29.6,400,0</font>
                         <color>0,0,0</color>
@@ -296,11 +296,87 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1</x>
+                        <x>3</x>
                         <y>565</y>
                         <z>0</z>
-                        <width>329</width>
-                        <height>163</height>
+                        <width>454</width>
+                        <height>202</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text2" uid="9">
+                    <properties>
+                        <text>Ah não! um inimigo!</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-30.4,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>732</x>
+                        <y>613</y>
+                        <z>0</z>
+                        <width>415</width>
+                        <height>194</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="triggerCaixa2" uid="15">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>916.5</x>
+                        <y>789</y>
+                        <z>0</z>
+                        <width>463</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text3" uid="16">
+                    <properties>
+                        <text>Bom trabalho! Siga adiante!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-30.4,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1296</x>
+                        <y>479</y>
+                        <z>0</z>
+                        <width>432</width>
+                        <height>332</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
