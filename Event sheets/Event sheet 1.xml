@@ -252,6 +252,16 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="755410159807883">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="304273336374545" type="Herói">
+                            <param id="0" name="Object">death</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="577974422782412" type="System" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="838757905853022" title="inimigo">
@@ -392,23 +402,52 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="843450104012648" title="items" />
-        <event-block sid="745364805101025">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="815159750251676" type="Herói">
-                    <param id="0" name="Object">coin</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="293731290843429" type="coin" />
-                <action id="-11" name="Add to" sid="655903631853395" type="Herói">
-                    <param id="0" name="Instance variable">coinCount</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="843450104012648" title="items">
+            <sub-events>
+                <event-block sid="745364805101025">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="815159750251676" type="Herói">
+                            <param id="0" name="Object">coin</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="293731290843429" type="coin" />
+                        <action id="-11" name="Add to" sid="655903631853395" type="Herói">
+                            <param id="0" name="Instance variable">coinCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="334586288889334" title="caixa de texto">
             <sub-events>
+                <event-block sid="191355556922662">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="557376151311201" type="Herói">
+                            <param id="0" name="Object">triggerCaixa2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="875843895569991" type="Herói" />
+                        <action id="-15" name="Set visible" sid="884631596295022" type="talk_other_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="448145632002995" type="Text2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="855712711904338" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="653721290599237" type="Herói">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="531619419949076" type="Text2" />
+                        <action id="-15" name="Set visible" sid="337911184025906" type="talk_other_2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="384938975177804">
                     <conditions>
                         <condition id="-18" name="On created" sid="910622731940150" type="Text" />
@@ -419,6 +458,9 @@
                         </action>
                         <action id="5" name="Set frame" sid="384485402184507" type="Inimigo">
                             <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="482654411541896" type="talk_other_1">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="559253761096432" type="System">
                             <param id="0" name="Seconds">3</param>
@@ -431,33 +473,13 @@
                             <param id="0" name="Animation">&quot;Atirando&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="724606059397827" type="talk_other_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="191355556922662">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="557376151311201" type="Herói">
-                    <param id="0" name="Object">triggerCaixa2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" disabled="1" id="11" name="Set enabled" sid="818654607511332" type="Herói">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="2" name="Stop" sid="875843895569991" type="Herói" />
-                <action id="-15" name="Set visible" sid="448145632002995" type="Text2">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="855712711904338" type="System">
-                    <param id="0" name="Seconds">3</param>
-                </action>
-                <action behavior="Platform" id="11" name="Set enabled" sid="653721290599237" type="Herói">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="531619419949076" type="Text2" />
-            </actions>
-        </event-block>
         <event-block sid="556996668185615">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="751861960070124" type="System" />

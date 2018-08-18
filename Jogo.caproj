@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -65,6 +66,40 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="786797409476915" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="talk_other_1" sid="456056546115092">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772960936825948" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\PC Computer - Final Fantasy XIV A Realm Reborn - Dialog Boxes\FFXIV_Text_UI\talk_other.png">
+                            <collision-poly>
+                                <point x="0.0330882" y="0.126761" />
+                                <point x="0.5" y="0.140845" />
+                                <point x="0.966912" y="0.126761" />
+                                <point x="0.96875" y="0.880282" />
+                                <point x="0.0367647" y="0.859155" />
+                                <point x="0.0496324" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="talk_other_2" sid="234658703621826">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587344296499196" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\PC Computer - Final Fantasy XIV A Realm Reborn - Dialog Boxes\FFXIV_Text_UI\talk_other.png">
+                            <collision-poly>
+                                <point x="0.0330882" y="0.126761" />
+                                <point x="0.5" y="0.140845" />
+                                <point x="0.966912" y="0.126761" />
+                                <point x="0.96875" y="0.880282" />
+                                <point x="0.0367647" y="0.859155" />
+                                <point x="0.0496324" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -348,7 +383,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite4" sid="930660539381175">
+            <object-type name="death" sid="930660539381175">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455283838018688" speed="5">
@@ -369,6 +404,68 @@
                                 <point x="0.5" y="0.971564" />
                                 <point x="0.0294118" y="0.957346" />
                                 <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="junglebottom" sid="705121449204369">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454484243952032" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\jungle-bottom.png">
+                            <collision-poly>
+                                <point x="0.0310458" y="0.202128" />
+                                <point x="0.5" y="0.553191" />
+                                <point x="0.980392" y="0.12766" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0359477" y="0.765957" />
+                                <point x="0.00980392" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="grassHalfMid" sid="430211113873615">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="879727057878498">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175800082385541" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Documents\GitHub\Leonardo-Projeto-Final\Files\assets\grassHalfMid.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.5" />
+                                <point x="0.571429" y="0.571429" />
+                                <point x="0.428571" y="0.571429" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="objects">
+            <object-type name="signRight" sid="226735998265637">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758990074496103" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Kenny Assets\platformer-art-complete-pack-0\Base pack\Tiles\signRight.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.142857" />
+                                <point x="0.5" y="0.142857" />
+                                <point x="0.828571" y="0.171429" />
+                                <point x="0.885714" y="0.5" />
+                                <point x="0.714286" y="0.714286" />
+                                <point x="0.5" y="0.6" />
+                                <point x="0.3" y="0.7" />
+                                <point x="0.0571429" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -661,6 +758,11 @@
         </object-type>
         <object-type global="1" name="vida" sid="637597817403070">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="538985655795659">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="395484672325816" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

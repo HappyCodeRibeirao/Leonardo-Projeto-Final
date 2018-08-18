@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>841.008</position-x>
-        <position-y>658.691</position-y>
-        <position-z>194.872</position-z>
-        <lookat-x>841.008</lookat-x>
-        <lookat-y>658.691</lookat-y>
+        <position-x>515.473</position-x>
+        <position-y>629.926</position-y>
+        <position-z>301.067</position-z>
+        <lookat-x>515.473</lookat-x>
+        <lookat-y>629.926</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,12 +23,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="bg" />
+    <active-layer name="platform" />
     <layers>
         <layer locked="0" name="bg" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="platform" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="personagem" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="hud" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="front" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="front" parallax-in-editor="0" visible="0" />
         <layer locked="0" name="dialog" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

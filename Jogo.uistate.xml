@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
+        <layout order="0">Layout 1</layout>
         <layout order="1">Layout 2</layout>
-        <event-sheet order="2">Event sheet 1</event-sheet>
+        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,9 +23,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/textos/" />
+        <folder expanded="1" path="object-folder/textos/" />
         <folder expanded="0" path="object-folder/Inimigos/" />
-        <folder expanded="0" path="object-folder/bg/" />
+        <folder expanded="1" path="object-folder/bg/" />
+        <folder expanded="1" path="object-folder/objects/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -33,14 +34,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/triggerCaixa2/" />
+        <folder expanded="1" path="animation-folder/talk_other_1/" />
+        <folder expanded="1" path="animation-folder/talk_other_2/" />
         <folder expanded="1" path="animation-folder/Inimigo/" />
         <folder expanded="1" path="animation-folder/foguete/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/bgGelo/" />
         <folder expanded="1" path="animation-folder/bg/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/death/" />
         <folder expanded="1" path="animation-folder/jungle/" />
+        <folder expanded="1" path="animation-folder/junglebottom/" />
+        <folder expanded="1" path="animation-folder/grassHalfMid/" />
+        <folder expanded="1" path="animation-folder/signRight/" />
         <folder expanded="1" path="animation-folder/Herói/" />
         <folder expanded="1" path="animation-folder/transition/" />
         <folder expanded="1" path="animation-folder/coin/" />
