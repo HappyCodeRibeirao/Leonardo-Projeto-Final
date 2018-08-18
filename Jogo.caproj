@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2788hgtg15f3</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>25500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -21,6 +21,7 @@
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -117,6 +118,14 @@
                                 <point x="0.0496324" y="0.5" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="triggercaixa3" sid="753227235377822">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967857749536016" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -364,8 +373,57 @@
             <object-type name="Sprite2" sid="416856836375564">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695327596560090" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Documents\GitHub\Leonardo-Projeto-Final\backup\Assets\gelim.png" />
+                    <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695327596560090" speed="5">
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241">
+                            <collision-poly>
+                                <point x="0.0645161" y="0" />
+                                <point x="0.903226" y="0" />
+                                <point x="0.903226" y="1" />
+                                <point x="0.0645161" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241" original-source="C:\Users\Happy Code\Documents\GitHub\Leonardo-Projeto-Final\backup\Assets\gelim.png">
+                            <collision-poly>
+                                <point x="0.0322581" y="0" />
+                                <point x="0.935484" y="0" />
+                                <point x="0.935484" y="1" />
+                                <point x="0.0322581" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241">
+                            <collision-poly>
+                                <point x="0.0322581" y="0" />
+                                <point x="0.967742" y="0" />
+                                <point x="0.967742" y="1" />
+                                <point x="0.0322581" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241" />
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241" />
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241" original-source="C:\Users\Happy Code\Documents\GitHub\Leonardo-Projeto-Final\Animations\Sprite2\Default\000.png">
+                            <collision-poly>
+                                <point x="0.0322581" y="0" />
+                                <point x="0.967742" y="0" />
+                                <point x="0.967742" y="1" />
+                                <point x="0.0322581" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241">
+                            <collision-poly>
+                                <point x="0.0322581" y="0" />
+                                <point x="0.935484" y="0" />
+                                <point x="0.935484" y="1" />
+                                <point x="0.0322581" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.483871" hotspotY="0.517241">
+                            <collision-poly>
+                                <point x="0.0645161" y="0" />
+                                <point x="0.903226" y="0" />
+                                <point x="0.903226" y="1" />
+                                <point x="0.0645161" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -482,6 +540,43 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Sprite" sid="620413907076299">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="439846834719340">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="755247072432152" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="0.0078125" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.375" />
+                                <point x="0.765626" y="0.59375" />
+                                <point x="0.744792" y="0.867188" />
+                                <point x="0.697917" y="1" />
+                                <point x="0.411458" y="1" />
+                                <point x="0" y="0.835938" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="chao" sid="937174167257312">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="873562595636655">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976356968720523" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="objects">
             <object-type name="signRight" sid="226735998265637">
@@ -531,7 +626,7 @@
                 <behavior-type name="ScrollTo" sid="433773640037426">
                     <behavior id="scrollto" />
                 </behavior-type>
-                <behavior-type name="BoundToLayout" sid="825122651299548">
+                <behavior-type name="BoundToLayout" sid="451482467620248">
                     <behavior id="bound" />
                 </behavior-type>
             </behaviors>
