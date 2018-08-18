@@ -51,6 +51,50 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="jungle" uid="38">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2763</x>
+                        <y>425</y>
+                        <z>0</z>
+                        <width>1850.513061523</width>
+                        <height>1276.007324219</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="jungle" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4609</x>
+                        <y>439</y>
+                        <z>0</z>
+                        <width>1850.513061523</width>
+                        <height>1276.007324219</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -233,7 +277,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>432</x>
-                        <y>903</y>
+                        <y>904</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -305,11 +349,69 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>871</x>
+                        <x>2426</x>
                         <y>1003</y>
                         <z>0</z>
-                        <width>2080</width>
+                        <width>5190</width>
                         <height>124</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="grassHalfMid" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>936</x>
+                        <y>869</y>
+                        <z>0</z>
+                        <width>70</width>
+                        <height>70</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="grassHalfMid" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1003.825073242</x>
+                        <y>869.082641602</y>
+                        <z>0</z>
+                        <width>70</width>
+                        <height>70</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -469,8 +571,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1732</x>
-                        <y>559</y>
+                        <x>4646</x>
+                        <y>619</y>
                         <z>0</z>
                         <width>70</width>
                         <height>593</height>
@@ -599,8 +701,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>269</x>
-                        <y>904</y>
+                        <x>295</x>
+                        <y>869</y>
                         <z>0</z>
                         <width>612</width>
                         <height>94</height>
@@ -621,8 +723,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>933.51739502</x>
-                        <y>877.80480957</y>
+                        <x>1075</x>
+                        <y>890</y>
                         <z>0</z>
                         <width>612</width>
                         <height>94</height>
@@ -750,33 +852,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text3" uid="16">
-                    <properties>
-                        <text>Bom trabalho! Siga adiante!</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-30.4,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1296</x>
-                        <y>479</y>
-                        <z>0</z>
-                        <width>432</width>
-                        <height>332</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="triggerCaixa2" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -799,28 +874,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="grassHalfMid" uid="32">
+                <instance type="talk_other_3" uid="37">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>936</x>
-                        <y>869</y>
+                        <x>1421</x>
+                        <y>554</y>
                         <z>0</z>
-                        <width>70</width>
-                        <height>70</height>
+                        <width>544</width>
+                        <height>142</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -828,31 +896,29 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="grassHalfMid" uid="33">
+                <instance type="Text3" uid="16">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <text>Bom trabalho! Siga adiante!</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Century Gothic,-30.4,700,1</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1003.825073242</x>
-                        <y>869.082641602</y>
+                        <x>1213</x>
+                        <y>531</y>
                         <z>0</z>
-                        <width>70</width>
-                        <height>70</height>
+                        <width>468</width>
+                        <height>49</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

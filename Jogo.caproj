@@ -103,6 +103,23 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="talk_other_3" sid="730399659729100">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865587452414951" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\PC Computer - Final Fantasy XIV A Realm Reborn - Dialog Boxes\FFXIV_Text_UI\talk_other.png">
+                            <collision-poly>
+                                <point x="0.0330882" y="0.126761" />
+                                <point x="0.5" y="0.140845" />
+                                <point x="0.966912" y="0.126761" />
+                                <point x="0.96875" y="0.880282" />
+                                <point x="0.0367647" y="0.859155" />
+                                <point x="0.0496324" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Inimigos">
             <object-type name="Inimigo" sid="752533556692604">
@@ -354,14 +371,6 @@
             </object-type>
         </object-folder>
         <object-folder name="bg">
-            <object-type name="bgGelo" sid="388564109461565">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169386982835351" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Documents\GitHub\Leonardo-Projeto-Final\Assets\596.jpg" />
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="bg" sid="862631380776902">
                 <plugin id="Sprite" />
                 <animation-folder>
@@ -450,6 +459,29 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ice" sid="606878406593754">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410350486254616" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\ice.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="icereverse" sid="952229308702117">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237746279431563" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\ice.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="objects">
             <object-type name="signRight" sid="226735998265637">
@@ -466,6 +498,21 @@
                                 <point x="0.5" y="0.6" />
                                 <point x="0.3" y="0.7" />
                                 <point x="0.0571429" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="coin" sid="819838182176298">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269614202447399" speed="5">
+                        <frame duration="1" hotspotX="0.502703" hotspotY="0.501832" original-source="C:\Users\Happy Code\Documents\GitHub\Leonardo-Projeto-Final\Assets\moeda.png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.10989" />
+                                <point x="1" y="0.131868" />
+                                <point x="1" y="1" />
+                                <point x="0.178378" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -738,21 +785,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141645177850401" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="coin" sid="819838182176298">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269614202447399" speed="5">
-                    <frame duration="1" hotspotX="0.502703" hotspotY="0.501832" original-source="C:\Users\Happy Code\Documents\GitHub\Leonardo-Projeto-Final\Assets\moeda.png">
-                        <collision-poly>
-                            <point x="0.145946" y="0.10989" />
-                            <point x="1" y="0.131868" />
-                            <point x="1" y="1" />
-                            <point x="0.178378" y="1" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
