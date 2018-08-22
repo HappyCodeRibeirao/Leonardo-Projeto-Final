@@ -82,7 +82,7 @@
                 <event-block sid="168602087320055">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="177903339561468" type="Keyboard">
-                            <param id="0" name="Key">65</param>
+                            <param id="0" name="Key">65 (A)</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -188,7 +188,7 @@
                                         <event-block sid="567355025463986">
                                             <conditions>
                                                 <condition id="2" inverted="1" name="Key is down" sid="819638428925079" type="Keyboard">
-                                                    <param id="0" name="Key">16</param>
+                                                    <param id="0" name="Key">16 (Shift)</param>
                                                 </condition>
                                             </conditions>
                                             <actions>

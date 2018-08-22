@@ -349,6 +349,63 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="snowChefe" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>atacando</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4510</x>
+                        <y>716</y>
+                        <z>0</z>
+                        <width>209.754180908</width>
+                        <height>237.353424072</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="chefeFogo" uid="61">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4571</x>
+                        <y>-340</y>
+                        <z>0</z>
+                        <width>125.791488647</width>
+                        <height>129.603347778</height>
+                        <depth>0</depth>
+                        <hotspotX>0.515151501</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -480,7 +537,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="12">
+                <instance type="snowMini" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -502,25 +559,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-            </instances>
-            <effects />
-        </layer>
-        <layer name="hud" sid="120705212882729">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>0</x>
-                <y>0</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
                 <instance type="Herói" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -572,6 +610,25 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="hud" sid="120705212882729">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0</x>
+                <y>0</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
                 <instance type="vida" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>

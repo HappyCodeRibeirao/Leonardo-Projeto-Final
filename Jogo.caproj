@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2788hgtg15f3</unique-id>
-    <saved-with-version>25500</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -370,10 +370,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite2" sid="416856836375564">
+            <object-type name="snowMini" sid="416856836375564">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695327596560090" speed="5">
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695327596560090" speed="5">
                         <frame duration="1" hotspotX="0.483871" hotspotY="0.517241">
                             <collision-poly>
                                 <point x="0.0645161" y="0" />
@@ -424,6 +424,47 @@
                                 <point x="0.0645161" y="1" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="snowChefe" sid="296146885950715">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="384299495242871" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado1.png" />
+                        <frame duration="1" hotspotX="0.507937" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado2.png" />
+                        <frame duration="1" hotspotX="0.508772" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado4.png" />
+                        <frame duration="1" hotspotX="0.508475" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado5.png" />
+                    </animation>
+                    <animation framecount="8" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="972771562818525" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando2.png" />
+                        <frame duration="1" hotspotX="0.506849" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando3.png" />
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando5.png" />
+                        <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando6.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando7.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando8.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="chefeFogo" sid="891992302125141">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="131255756034721">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="607567985511560">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="917755378533760" speed="5">
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo2.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo4.png" />
                     </animation>
                 </animation-folder>
             </object-type>
