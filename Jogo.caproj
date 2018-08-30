@@ -19,6 +19,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -142,7 +143,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="11" loop="1" name="PiscandoEAtirando" pingpong="0" repeatcount="1" repeatto="0" sid="142738274829243" speed="5">
+                    <animation framecount="11" loop="1" name="PiscandoEAtirando" pingpong="0" repeatcount="1" repeatto="0" sid="142738274829243" speed="11">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <image-point name="ShootPoint" x="0.09375" y="0.385714" />
                             <collision-poly>
@@ -286,7 +287,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="6" loop="1" name="Atirando" pingpong="0" repeatcount="1" repeatto="0" sid="451798464951507" speed="5">
+                    <animation framecount="6" loop="1" name="Atirando" pingpong="0" repeatcount="1" repeatto="0" sid="451798464951507" speed="6">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <image-point name="ShootPoint" x="0.09375" y="0.385714" />
                             <collision-poly>
@@ -372,6 +373,11 @@
             </object-type>
             <object-type name="snowMini" sid="416856836375564">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="808075472121497">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695327596560090" speed="5">
                         <frame duration="1" hotspotX="0.483871" hotspotY="0.517241">
@@ -430,22 +436,17 @@
             <object-type name="snowChefe" sid="296146885950715">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="5" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="384299495242871" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado1.png" />
-                        <frame duration="1" hotspotX="0.507937" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado2.png" />
-                        <frame duration="1" hotspotX="0.508772" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado3.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado4.png" />
-                        <frame duration="1" hotspotX="0.508475" hotspotY="0.506024" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\parado5.png" />
+                    <animation framecount="4" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="384299495242871" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.509804" />
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.509804" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
                     </animation>
-                    <animation framecount="8" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="972771562818525" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando1.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando2.png" />
-                        <frame duration="1" hotspotX="0.506849" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando3.png" />
-                        <frame duration="1" hotspotX="0.507246" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando4.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando5.png" />
-                        <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando6.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando7.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\atacando8.png" />
+                    <animation framecount="4" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="972771562818525" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505155" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.506849" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -465,6 +466,450 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo2.png" />
                         <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo3.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\Enemies\Snowman\fogo4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cobra" sid="559854682980073">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="andaDireita" sid="406464754209990" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="213095619470557">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="LineOfSight" sid="865854624622482">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                    <behavior-type name="Platform" sid="836325295305260">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="998810492186541" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="ShootPoint" x="0.913793" y="0.383333" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="ShootPoint" x="0.913793" y="0.383333" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="ShootPoint" x="0.913793" y="0.383333" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0.015625" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="941700027277407" speed="5">
+                        <frame duration="1" hotspotX="0.491525" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.491525" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.491525" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.491525" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="292152834648947" speed="5">
+                        <frame duration="1" hotspotX="0.493671" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.493671" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.49" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.89" y="1" />
+                                <point x="0.1" y="1" />
+                                <point x="0.1" y="0" />
+                                <point x="0.89" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.49" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.89" y="1" />
+                                <point x="0.1" y="1" />
+                                <point x="0.1" y="0" />
+                                <point x="0.89" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="urso" sid="651124182335887">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="463918978728147">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="LineOfSight" sid="355009771832114">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="234683015165194" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505882">
+                            <image-point name="ShootPoint" x="0.0897436" y="0.388235" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505882">
+                            <image-point name="ShootPoint" x="0.0897436" y="0.388235" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505882">
+                            <image-point name="ShootPoint" x="0.0897436" y="0.388235" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="0.984375" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="6" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="656359621820864" speed="5">
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="7" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="872266100648888" speed="5">
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.513333" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.219933" y="0" />
+                                <point x="0.794" y="0" />
+                                <point x="0.794" y="1" />
+                                <point x="0.219933" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.513333" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.219933" y="0" />
+                                <point x="0.794" y="0" />
+                                <point x="0.794" y="1" />
+                                <point x="0.219933" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="elementoAgua" sid="578784701910334">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="276817025066999">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="LineOfSight" sid="833304500308311">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="325495853599626" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="ShootPoint" x="0.0925926" y="0.388889" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="ShootPoint" x="0.0925926" y="0.388889" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="166704383715793" speed="5">
+                        <frame duration="1" hotspotX="0.519231" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.519231" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.519231" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.125185" y="0" />
+                                <point x="0.895679" y="0" />
+                                <point x="0.895679" y="1" />
+                                <point x="0.125185" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="109697690398836" speed="5">
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.506667">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.506667">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="vovo" sid="155614366642566">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="523348158711813" speed="5">
+                        <frame duration="1" hotspotX="0.504348" hotspotY="0.505618">
+                            <image-point name="ShootPoint" x="0.0956522" y="0.393258" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504348" hotspotY="0.505618">
+                            <image-point name="ShootPoint" x="0.0956522" y="0.393258" />
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504348" hotspotY="0.505618" />
+                        <frame duration="1" hotspotX="0.504348" hotspotY="0.505618" />
+                    </animation>
+                    <animation framecount="3" loop="1" name="atacando" pingpong="0" repeatcount="1" repeatto="0" sid="211050711688993" speed="5">
+                        <frame duration="1" hotspotX="0.511765" hotspotY="0.507692">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511765" hotspotY="0.507692">
+                            <collision-poly>
+                                <point x="0.14" y="0" />
+                                <point x="0.866667" y="0" />
+                                <point x="0.866667" y="1" />
+                                <point x="0.14" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="javali" sid="300616102502533">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="918508160095467">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="LineOfSight" sid="178430785062806">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="417651593529562" speed="5">
+                        <frame duration="1" hotspotX="0.494382" hotspotY="0.506024">
+                            <collision-poly>
+                                <point x="0.874815" y="1" />
+                                <point x="0.104321" y="1" />
+                                <point x="0.104321" y="0" />
+                                <point x="0.874815" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.494382" hotspotY="0.506024">
+                            <collision-poly>
+                                <point x="0.874815" y="1" />
+                                <point x="0.104321" y="1" />
+                                <point x="0.104321" y="0" />
+                                <point x="0.874815" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.494382" hotspotY="0.506024">
+                            <collision-poly>
+                                <point x="0.874815" y="1" />
+                                <point x="0.104321" y="1" />
+                                <point x="0.104321" y="0" />
+                                <point x="0.874815" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.494382" hotspotY="0.506024">
+                            <collision-poly>
+                                <point x="0.874815" y="1" />
+                                <point x="0.104321" y="1" />
+                                <point x="0.104321" y="0" />
+                                <point x="0.874815" y="0" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -581,7 +1026,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite" sid="620413907076299">
+            <object-type name="gramaFlutuante" sid="620413907076299">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Jumpthru" sid="439846834719340">
@@ -651,6 +1096,21 @@
                                 <point x="0.178378" y="1" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="moeda2" sid="986984239099794">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689304028365117" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -937,6 +1397,100 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.541176" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tundraHalf" sid="488981109354226">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="179744306610554">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983186268907611" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Kenny Assets\platformergraphics-iceworld\Tiles\tundraHalf.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="0.985714" y="0.5" />
+                            <point x="0.571429" y="0.571429" />
+                            <point x="0.428571" y="0.571429" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="virador" sid="776036353384781">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373285817713650" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="triggervelho" sid="488160752831053">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383096822174813" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tundraHalf2" sid="151685285231451">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668872840100005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Kenny Assets\platformergraphics-iceworld\Tiles\tundraHalf.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="0.985714" y="0.5" />
+                            <point x="0.571429" y="0.571429" />
+                            <point x="0.428571" y="0.571429" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deadTree" sid="949657034853441">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923891554145605" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Kenny Assets\platformergraphics-iceworld\Tiles\deadTree.png">
+                        <collision-poly>
+                            <point x="0.485714" y="0.485714" />
+                            <point x="0.5" y="0.0285714" />
+                            <point x="0.7" y="0.3" />
+                            <point x="0.628571" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.328571" y="0.671429" />
+                            <point x="0.471429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pineSapling" sid="317814011283739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522167101194984" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Kenny Assets\platformergraphics-iceworld\Tiles\pineSapling.png">
+                        <collision-poly>
+                            <point x="0.271429" y="0.271429" />
+                            <point x="0.5" y="0.0285714" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.842857" y="0.842857" />
+                            <point x="0.5" y="1" />
+                            <point x="0.157143" y="0.842857" />
+                            <point x="0.242857" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

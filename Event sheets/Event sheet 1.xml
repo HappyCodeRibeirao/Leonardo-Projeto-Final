@@ -311,6 +311,122 @@
         </event-group>
         <event-group description="" sid="838757905853022" title="inimigo">
             <sub-events>
+                <event-group description="" sid="604789573152985" title="cobra">
+                    <sub-events>
+                        <event-block sid="130349919043883">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="537691111642212" type="cobra">
+                                    <param id="0" name="Object">virador</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="711900414346200">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="328645545293216" type="cobra">
+                                            <param id="0" name="Instance variable">andaDireita</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="693468565838802" type="cobra">
+                                            <param id="0" name="Instance variable">andaDireita</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="624281951104216">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="859405352910523" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="516685234978420" type="cobra">
+                                            <param id="0" name="Instance variable">andaDireita</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="759729221701705">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="589941634320616" type="cobra">
+                                    <param id="0" name="Instance variable">andaDireita</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="413410279681119" type="cobra">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="297542416408296" type="cobra">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="737273885840807">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="184958204182211" type="cobra">
+                                    <param id="0" name="Instance variable">andaDireita</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="175450724909824" type="cobra">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="642055822672772" type="cobra">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="594647715732784">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="859248903459582" type="System">
+                                    <param id="0" name="Object">cobra</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="986070116814061">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="642432283653054" type="System">
+                                            <param id="0" name="First value">cobra.X</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">Herói.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Set mirrored" sid="880426078568796" type="cobra">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="595311337679939">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="495569567062547" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Set mirrored" sid="696904921000147" type="cobra">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="628707124831534">
+                            <conditions>
+                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="295919567513209" type="cobra">
+                                    <param id="0" name="Object">Herói</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="727045871387127">
                     <conditions>
                         <condition id="-11" name="For Each" sid="407681091368315" type="System">
@@ -420,11 +536,11 @@
                 <event-block sid="745364805101025">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="815159750251676" type="Herói">
-                            <param id="0" name="Object">coin</param>
+                            <param id="0" name="Object">moeda2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="293731290843429" type="coin" />
+                        <action id="-9" name="Destroy" sid="293731290843429" type="moeda2" />
                         <action id="-11" name="Add to" sid="655903631853395" type="Herói">
                             <param id="0" name="Instance variable">coinCount</param>
                             <param id="1" name="Value">1</param>
@@ -461,7 +577,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="384938975177804">
+                <event-block disabled="1" sid="384938975177804">
                     <conditions>
                         <condition id="-18" name="On created" sid="910622731940150" type="Text" />
                     </conditions>

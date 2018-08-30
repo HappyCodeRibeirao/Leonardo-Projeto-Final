@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/textos/" />
         <folder expanded="1" path="object-folder/Inimigos/" />
         <folder expanded="1" path="object-folder/bg/" />
-        <folder expanded="0" path="object-folder/objects/" />
+        <folder expanded="1" path="object-folder/objects/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -43,6 +43,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/snowMini/" />
         <folder expanded="1" path="animation-folder/snowChefe/" />
         <folder expanded="1" path="animation-folder/chefeFogo/" />
+        <folder expanded="1" path="animation-folder/cobra/" />
+        <folder expanded="1" path="animation-folder/urso/" />
+        <folder expanded="1" path="animation-folder/elementoAgua/" />
+        <folder expanded="1" path="animation-folder/vovo/" />
+        <folder expanded="1" path="animation-folder/javali/" />
         <folder expanded="1" path="animation-folder/bg/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/death/" />
@@ -51,12 +56,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/grassHalfMid/" />
         <folder expanded="1" path="animation-folder/ice/" />
         <folder expanded="1" path="animation-folder/icereverse/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/gramaFlutuante/" />
         <folder expanded="1" path="animation-folder/chao/" />
         <folder expanded="1" path="animation-folder/signRight/" />
         <folder expanded="1" path="animation-folder/coin/" />
+        <folder expanded="1" path="animation-folder/moeda2/" />
         <folder expanded="1" path="animation-folder/Herói/" />
         <folder expanded="1" path="animation-folder/transition/" />
         <folder expanded="1" path="animation-folder/vida/" />
+        <folder expanded="1" path="animation-folder/tundraHalf/" />
+        <folder expanded="1" path="animation-folder/virador/" />
+        <folder expanded="1" path="animation-folder/triggervelho/" />
+        <folder expanded="1" path="animation-folder/tundraHalf2/" />
+        <folder expanded="1" path="animation-folder/deadTree/" />
+        <folder expanded="1" path="animation-folder/pineSapling/" />
     </folders-expanded>
 </c2uistate>
