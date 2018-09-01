@@ -24,7 +24,7 @@
                     <conditions>
                         <condition id="3" name="Compare frame" sid="644988065432668" type="vida">
                             <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">3</param>
+                            <param id="1" name="Number">4</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -401,6 +401,11 @@
                                 <action id="-9" name="Destroy" sid="981035451869058" type="foguete" />
                                 <action id="5" name="Set frame" sid="796169620491606" type="vida">
                                     <param id="0" name="Frame number">vida.AnimationFrame + 1 &gt;= 4 ? 4 : vida.AnimationFrame + 1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="205606282797172" type="Herói">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">2.0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1018,5 +1023,17 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="427277474599528">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="373458603923523" type="Herói">
+                    <param id="0" name="Object">flagRed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="353812090263050" type="System">
+                    <param id="0" name="Layout">Layout 3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
